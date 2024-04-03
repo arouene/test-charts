@@ -14,5 +14,5 @@ data:
         clientSecret: $dex.github.clientSecret
         orgs:
         - name: LuccaSA
-#         teams:
-#         - ops
+          teams:
+          - Ops
