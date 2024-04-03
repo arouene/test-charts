@@ -10,7 +10,7 @@ data:
       id: github
       name: GitHub
       config:
-        clientID: 36480ec7fb2b1da10e61
+        clientID: 037650349f83c30d6eba
         clientSecret: $dex.github.clientSecret
         orgs:
         - name: LuccaSA
