@@ -13,6 +13,6 @@ data:
         clientID: 36480ec7fb2b1da10e61
         clientSecret: $dex.github.clientSecret
         orgs:
-        - name: arouene
+        - name: LuccaSA
           teams:
-          - infra
+          - ops
