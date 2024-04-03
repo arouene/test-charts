@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
 data:
-  url: https://argocd.arouene.lucca.io/
+  url: https://argocd.arouene.lucca.io
   dex.config: |
     connectors:
     - type: github
