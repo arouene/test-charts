@@ -8,9 +8,9 @@ version: 0.1.1
 appVersion: "1.0"
 
 dependencies:
-- name: rook-release/rook-ceph
+- name: rook-ceph
   version: v1.13.4
   repository: https://charts.rook.io/release
-- name: rook-release/rook-ceph-cluster
+- name: rook-ceph-cluster
   version: v1.13.4
   repository: https://charts.rook.io/release
