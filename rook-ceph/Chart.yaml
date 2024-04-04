@@ -1,0 +1,16 @@
+apiVersion: v2
+name: rook-ceph
+description: A Helm chart for Rook-Ceph
+
+type: application
+
+version: 0.1.1
+appVersion: "1.0"
+
+dependencies:
+- name: rook-release/rook-ceph
+  version: v1.13.4
+  repository: https://charts.rook.io/release
+- name: rook-release/rook-ceph-cluster
+  version: v1.13.4
+  repository: https://charts.rook.io/release

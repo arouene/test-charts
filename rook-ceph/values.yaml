@@ -1,0 +1,23 @@
+rook-ceph:
+  enableDiscoveryDaemon: true
+  discoveryDaemonInterval: 5m
+  csi:
+    enableCephfsDriver: false
+    enableCephfsSnapshotter: false
+    enableNFSSnapshotter: false
+  monitoring:
+    enabled: true
+
+rook-ceph-cluster:
+  monitoring:
+    enabled: true
+    createPrometheusRules: true
+  cephClusterSpec:
+    mgr:
+      modules:
+        - name: pg_autoscaler
+          enabled: true
+        - name: rook
+          enabled: true
+  cephFileSystems: []
+  cephObjectStores: []
