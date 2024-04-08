@@ -11,8 +11,9 @@ data:
       name: GitHub
       config:
         clientID: 037650349f83c30d6eba
-        clientSecret: $dex.github.clientSecret
+        clientSecret: $argocd-secret-custom:dex.github.clientSecret
         orgs:
         - name: LuccaSA
           teams:
           - Ops
+  webhook.github.secret: "$argocd-secret-custom:webhook.github.secret"
