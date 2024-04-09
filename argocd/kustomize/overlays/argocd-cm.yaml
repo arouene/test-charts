@@ -24,3 +24,9 @@ data:
       - "CiliumIdentity"
       clusters:
       - "*"
+  resource.customizations: |
+    extensions/Ingress:
+      health.lua: |
+        hs = {}
+        hs.status = "Healthy"
+        return hs
