@@ -17,3 +17,10 @@ data:
           teams:
           - Ops
   webhook.github.secret: "$argocd-secret-custom:webhook.github.secret"
+  resource.exclusions: |
+    - apiGroups:
+      - "cilium.io"
+      kinds:
+      - "CiliumIdentity"
+      clusters:
+      - "*"
