@@ -9,5 +9,3 @@ cert-manager:
     podDisruptionBudget:
       enabled: true
       minAvailable: 1
-  cainjector:
-    enabled: false
