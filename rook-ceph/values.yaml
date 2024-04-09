@@ -12,12 +12,12 @@ rook-ceph-cluster:
   monitoring:
     enabled: true
     #createPrometheusRules: true
-  cephClusterSpec:
-    mgr:
-      modules:
-        - name: pg_autoscaler
-          enabled: true
-        - name: rook
-          enabled: true
+  #cephClusterSpec:
+  #  mgr:
+  #    modules:
+  #      - name: pg_autoscaler
+  #        enabled: true
+  #      - name: rook
+  #        enabled: true
   cephFileSystems: []
   cephObjectStores: []
